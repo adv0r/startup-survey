@@ -1,3 +1,12 @@
+Install git-ftp 
+1) git clone https://github.com/resmo/git-ftp.git
+2) cd git-ftp
+3) sudo make install
+4) git config git-ftp.user adva
+5) git config git-ftp.url ftp.lize.it/survey
+6) git config git-ftp.password ciriciao
+
+--------------------------------------
 Forms and ajax : jQuery Form Plugin
 http://jquery.malsup.com/form/
 
