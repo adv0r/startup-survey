@@ -20,16 +20,29 @@ a{
 }
 
 .content{
-position: relative;
-left : 1%;
-right : 1%;
 }
 
 .iframe-survey{
-background-color: fuchsia;
-position: relative;
-left: 1%;
-right : 1%;
+	margin-top: 3%;
+	margin-left: 9%;
+	margin-right:10%;
+	width:80%;
+	min-height: 90%;
+	display:block;
+	border: none;
+	padding: 0;
+	position: relative;
+	background-color:#b0e0e6;
+	z-index: 1;
+
+}
+
+.ribbon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	z-index: 2;
 }
 .header{
 }
