@@ -5,28 +5,12 @@
 
 	<title>Startup Survey - Landing page</title>
 
-
 	<link rel="shortcut icon" href="res/img/favicon.ico"/>
 	
 	<link href="res/css/style-index.css" rel="stylesheet" type="text/css"/>
 
 	<script src="res/js/jquery-1.7.js" type="text/javascript"></script>
 	
-	<!-- // Password check (alfa)	/////////////////////////////////////////////////////////////////// -->
-	<script>
-	function takeSurvey(){
-	pw = document.getElementById('pwd').value;
-	if (pw=="desrever")
-	{
-		window.location.href = 'pages/survey.htm';
-	}
-	else
-	{
-		alert("Wrong Password");
-	}	
-	}
-	
-	</script>
 
 </head>
 
@@ -42,11 +26,7 @@
 	
 	<div id="content" class="content">
 	<iframe class= "iframe-survey" src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEhkaVMyYTVwOU9XLTViNW9YYThrd1E6MQ" width="760" height="8113" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-	
 
-	Password: <input type="password" name="pwd" id="pwd" />
-	<input type="button" name="takeTheSurvey" value="Take the survey" onClick="takeSurvey();"/>
-	
 	
 	</div><!-- content -->
 	
