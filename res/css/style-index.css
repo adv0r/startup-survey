@@ -8,6 +8,7 @@
 
 body{
 	background-color: orange;
+	background:none transparent;
 }
 
 a{
@@ -17,23 +18,27 @@ a{
 
 
 .container{
+
 }
 
 .content{
+	
 }
 
 .iframe-survey{
+
 	margin-top: 3%;
 	margin-left: 9%;
 	margin-right:10%;
-	width:80%;
-	min-height: 90%;
+	min-height:90%;
+	width:70%;
 	display:block;
 	border: none;
 	padding: 0;
 	position: relative;
-	background-color:#b0e0e6;
+
 	z-index: 1;
+	background-image: url('../img/form.jpg');;
 
 }
 
