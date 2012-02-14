@@ -20,8 +20,17 @@ a{
 }
 
 .content{
+position: relative;
+left : 1%;
+right : 1%;
 }
 
+.iframe-survey{
+background-color: fuchsia;
+position: relative;
+left: 1%;
+right : 1%;
+}
 .header{
 }
 
