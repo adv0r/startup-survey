@@ -5,7 +5,7 @@
 
 }
 
-body{
+html,body{
 	background-repeat: repeat;
 	background-image: url(../img/stripes-light.png);
 	background-color: white;
@@ -20,8 +20,8 @@ a{
 }
 
 
-.container{
-
+.banana{
+	color: fuchsia;
 }
 
 .content{
@@ -34,17 +34,17 @@ a{
 
 .iframe-survey{
 
-	height: 80%;
-
+	height: 83%;
+	bottom: 1%;
 	background-color: white;
 
 	padding-left: 3%;
 
-	padding-bottom: 3%;
+	padding-bottom: 5%;
 
 	padding-right: 3%;
 
-	padding-top: 3%;
+	padding-top: 2%;
 
 	top: 0px;
 
@@ -60,31 +60,48 @@ a{
 
 	text-align: left;
 
-	margin-top: 3%;
-	margin-left: 9%;
+	margin-top: 1%;
+	margin-left: 22%;
 	margin-right:10%;
 
-	width:70%;
+	width:50%;
 	display: block;
 	position: relative;
 
-	z-index: 1;
+	z-index: 2;
 -moz-border-radius: 12px;
 -webkit-border-radius: 12px; 
   border-radius: 12px; 
   -moz-box-shadow: 4px 4px 14px #000; 
   -webkit-box-shadow: 4px 4px 14px #000; 
   box-shadow: 4px 4px 14px #000; 
-  
+
   
 }
+.content {
+min-height: 100%;
+height: auto ;
+height: 100%;
+margin: 0 auto -4em;
 
+}
+.footer{
+	position: relative;
+	bottom: 35px;
+	height: 30px;
+	margin-left: 23%;
+	margin-right:10%;	
+	width: 50%;
+	font-size: 70%;
+z-index: 4;
+overflow: auto;
+}
 .ribbon{
 	position: absolute;
 	top: 0;
 	right: 0;
 	border: 0;
-	z-index: 2;
+	z-index: 3;
 }
 .header{
 }
