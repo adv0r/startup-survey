@@ -57,7 +57,7 @@ a{
 	border-right-style: ridge;
 
 	border-top-style: ridge;
-
+	display: none;
 	text-align: left;
 
 	margin-top: 1%;

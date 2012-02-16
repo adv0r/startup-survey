@@ -17,12 +17,28 @@
 
 <!-- // Body	/////////////////////////////////////////////////////////////////// -->
 
-<body onload='parent.resizeIframe()'>
+<body >
 
 
 
 	<div id="content" class="content">
+<<<<<<< HEAD
 	<iframe  class= "iframe-survey" id="iframe-survey"   src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFFVWVhMNVV2YnprSkFfSUpFWlZQYWc6MQ" width="760" height="13979" frameborder="0" marginheight="0" marginwidth="0"" >Loading...</iframe>
+=======
+	
+	<FORM NAME = f1 class="iframe-survey">
+	<P align="left"> 
+<h2>The role of Engineering in Software Startups</h2> </br> </br>
+This survey is anonymous, will take about 15 to 20 min to complete, final surprise. Blekinge Institute of Technology. </br> </br>
+<strong>Are you currently working in a software startup?</strong></br> </br>
+	<Input type = radio Name = r1 Value = "Normal" onclick=GetSelectedItem()> Yes, and my answers will be related to the current company I´m working in. </br>
+<Input type = radio Name = r1 Value = "Expertise" onclick=GetSelectedItem()> No, but I did in the past. </br> </br>
+Let´s start!</br> </br>
+<Input type=button Name= go Value=" Proceed" onclick=ShowFrame()>
+ </P>
+ </FORM>
+	<!-- <iframe  class= "iframe-survey" id="iframe-survey"   src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEhkaVMyYTVwOU9XLTViNW9YYThrd1E6MQ" >Loading...</iframe> -->
+>>>>>>> fdh
 
 
 	<div class="push"></div>
@@ -49,6 +65,38 @@
 
 <!-- // User voice /////////////////////////////////////////////////////////////////// -->
 <script type="text/javascript">
+
+chosen = ""
+function GetSelectedItem() {
+
+
+len = document.f1.r1.length
+
+for (i = 0; i <len; i++) {
+if (document.f1.r1[i].checked) {
+
+chosen = document.f1.r1[i].value;
+
+}
+
+}
+}
+function ShowFrame() {
+if (chosen == "") {
+alert("Choose a type")
+}
+else {if(chosen== "Normal"){
+
+	document.getElementById('content').innerHTML = "<iframe  class= 'iframe-survey' id='iframe-survey'   src='https://docs.google.com/spreadsheet/embeddedform?formkey=dEhkaVMyYTVwOU9XLTViNW9YYThrd1E6MQ' >Loading...</iframe> ";
+}
+else 
+{if (chosen== "Expertise"){
+document.getElementById('content').innerHTML = "<iframe  class= 'iframe-survey' src='https://docs.google.com/spreadsheet/embeddedform?formkey=dHRpTmlqVXVwUWFZbWl1YkRjUWVSQ2c6MQ'>Loading...</iframe> ";
+}
+}
+}
+}
+
   var uvOptions = {};
   (function() {
     var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
