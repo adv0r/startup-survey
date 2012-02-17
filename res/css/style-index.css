@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family : "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Arial, sans-serif ;
-
+font-weight: 300;
 color: #333;
 
 
@@ -24,10 +24,16 @@ a{
 .description{
 font-size: 12px;
 color: #777;}
+
 h2{
-font-size: 18px;}
+font-weight: bold;
+font-size: 18px;
+color: #333;}
+
 h1{
-font-size: 22px;}
+font-weight: bold;
+font-size: 22px;
+color: #333;}
 
 
 .content{
@@ -36,6 +42,11 @@ font-size: 22px;}
     bottom: 0;
     left: 0;
     right: 0;
+    
+min-height: 100%;
+height: auto ;
+height: 100%;
+margin: 0 auto -4em;
     
 }
 .rd{
@@ -52,7 +63,7 @@ font-size: 13px;
 }
 .iframe-survey{
 position:relative;
-overflow:auto;
+
 font-size: 14px;
 	height: 86%;
 	bottom: 1%;
@@ -98,15 +109,7 @@ font-size: 14px;
 
   
 }
-.content {
-min-height: 100%;
-height: auto ;
-height: 100%;
-margin: 0 auto -4em;
 
-
-
-}
 .int{
 border: solid;
 
@@ -117,8 +120,10 @@ padding: 5px;
 -webkit-border-radius: 12px; 
   border-radius: 12px; 
 }
-#wrp{
-
+.wrp2{
+position: relative;
+height : 98%;
+overflow:auto;
 
 }
 .footer{
