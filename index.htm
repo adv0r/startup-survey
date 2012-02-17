@@ -25,33 +25,47 @@
 <div id="wrp" class="iframe-survey">
 
 	<FORM NAME = f1  >
-	<P align="left"> 
-<h2>Survey</h2> </br> </br>
-This survey explores the <strong> software development process in software startups </strong> with particular focus on engineering practices.  </br> </br>
-<h2>Instructions </h2></br> </br>
+	
+<h1 style=" text-align: center"> Software Development in Startups </h1> <h2  style=" text-align: center">State of the the practice</h2>  </br> </br>
 
-It requires from 15 to 20 minutes to comlpete the questionnaire. </br>
-<strong> The respondant must have experience with software development in startups. </strong>
-If you comlpete the survey, you will have exclusive access to a toolkit of useful resources for startups and you will receive the results of our research as soon as possible. </br>
-Respondants are anonymous.</br> </br>
+<i>This survey explores the <strong> software development process in software startups </strong> with particular focus on engineering practices.</i> </br> </br>
+<div  class="int">
+<h2>Instructions </h2> </br>
+<ul>
+<li>It requires from 20 to 25 minutes to comlpete the questionnaire. </li>
+<li><strong> The respondant must have experience with software development in startups. </strong> </li>
+<li>If you comlpete the survey, you will have exclusive access to a toolkit of useful resources for startups and you will receive the results of our research as soon as possible. </li>
+<ul>
+</br>
 
-<i>In order to validate our result Is very important for us to reach a significant number of responses from startups.</i>
+<span class="description">In order to validate our result Is very important for us to reach a significant number of responses from startups.
 
-<i>If you think you cant answer but you know someone who can, please help us and forward this to him/her using this link .</i> </br> </br>
+If you think you cant answer but you know someone who can, please help us and forward this survey to him/her using this link.</span>
+</div>
+ </br> 
+
+<div  class="int">
 
 <h2> Let&rsquo; s start!</h2> </br> </br>
 
-<strong> Are you currently working in a startup with a software-intensive activity?</strong> </br>
-Software-intensive systems include large-scale heterogeneous systems, embedded systems for automotive applications, telecommunications, wireless ad hoc systems, business applications with an emphasis on web services etc.</br> </br>
+<strong> Are you currently working in a startup with a software-intensive* activity?</strong> </br>
+</br> 
 
-<Input type = radio Name = r1 Value = "Normal" onclick=GetSelectedItem()> Yes, and my answers will be related to the current company I&rsquo; m working in. </br>
-<Input type = radio Name = r1 Value = "Expertise" onclick=GetSelectedItem()> No, but I did in the past.
-
-</br> </br>
-
+<Input  type = radio Name = r1 Value = "Normal" onclick=GetSelectedItem()> <span class="rd">Yes, and my answers will be related to the current company I&rsquo; m working in. </span></br>
+<Input   type = radio Name = r1 Value = "Expertise" onclick=GetSelectedItem()><span class="rd"> No, but I did in the past. </span></br> 
+</br> 
+</FORM>
 <a class="button" onclick=this.blur();ShowFrame()><span>Take the survey</span></a>  
- </P>
- </FORM>
+
+</br>
+</br> 
+<span class="description">*Software-intensive systems include large-scale heterogeneous systems, embedded systems for automotive applications, telecommunications, wireless ad hoc systems, business applications with an emphasis on web services etc.</span> 
+</br> 
+</div>
+</br>
+
+
+ 
 	<!-- <iframe  class= "iframe-survey" id="iframe-survey"   src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEhkaVMyYTVwOU9XLTViNW9YYThrd1E6MQ" >Loading...</iframe> -->
 </div>
 
@@ -69,6 +83,7 @@ Software-intensive systems include large-scale heterogeneous systems, embedded s
 <div id="ribbon" class="ribbon">
 <img  src="res/img/ribbon.png" alt="Contact"></a>
 </div>
+
 	<!-- // Ribbon end  -->
 
 			
@@ -106,7 +121,7 @@ else {if(chosen== "Normal"){
 }
 else 
 {if (chosen== "Expertise"){
-document.getElementById('wrp').innerHTML = "<iframe  class= 'iframe-survey' src='https://docs.google.com/spreadsheet/embeddedform?formkey=dHRpTmlqVXVwUWFZbWl1YkRjUWVSQ2c6MQ'>Loading...</iframe> ";
+document.getElementById('wrp').innerHTML = "<iframe  class= 'iframes' src='https://docs.google.com/spreadsheet/embeddedform?formkey=dHRpTmlqVXVwUWFZbWl1YkRjUWVSQ2c6MQ'>Loading...</iframe> ";
 }
 }
 }
