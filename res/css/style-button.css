@@ -1,4 +1,6 @@
 .buttonz {
+	position: relative;
+	margin-left: 40%;
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
