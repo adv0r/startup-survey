@@ -11,7 +11,7 @@
 	<link href="res/css/style-button.css" rel="stylesheet" type="text/css"/>
 
 
-	<script src="res/js/jquery-1.7.js" type="text/javascript"></script>
+	<script src="res/js/jquery-1.7.min.js" type="text/javascript"></script>
 	
 
 <!-- // Horrible password protection	/////////////////////////////////////////////////////////////////// -->
@@ -63,7 +63,7 @@ else
 <li>The respondants must have experience with software development in startups.</li>
 <li>It requires around 15 minutes to comlpete the questionnaire. </li>
 <li>If you comlpete the survey, you will have exclusive access to a toolkit of useful resources for startups and you will receive the results of our research as soon as possible. </li>
-<ul>
+</ul>
 </br>
 
 <span class="description">In order to validate our result Is very important for us to reach a significant number of responses from startups.
@@ -81,7 +81,7 @@ If you think you cant answer but you know someone who can, please help us and fo
 </br> 
 </FORM>
 
-<a class="buttonz orange" onclick=this.blur();ShowFrame()><span>Take the survey</span></a>  
+<a class="buttonz orange" onclick=this.blur();ShowFrame()><span>Take the survey</span></a>
 
 </br>
 </br> 
@@ -91,11 +91,11 @@ If you think you cant answer but you know someone who can, please help us and fo
 </div>
 </br>
 
-
- 
+    <div  class="int">
+    <iframe class='iframes' src="res/js/sponsor.html" >Loading...</iframe>
 	<!-- <iframe  class= "iframe-survey" id="iframe-survey"   src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEhkaVMyYTVwOU9XLTViNW9YYThrd1E6MQ" >Loading...</iframe> -->
 </div>
-
+</div>
 </div>
 	<div class="push"></div>
 	<div id="footer" class="footer">
@@ -106,6 +106,7 @@ If you think you cant answer but you know someone who can, please help us and fo
 	</div>
 	
 	</div><!-- content -->
+
 	<!-- // Ribbon /////////////////////////////////////////////////////////////////// -->
 <div id="ribbon" class="ribbon">
 <img  src="res/img/ribbon.png" alt="Contact"></a>
@@ -146,7 +147,7 @@ else {if(chosen== "Normal"){
 
 	document.getElementById('wrp').innerHTML = "<iframe class='iframes' src='https://docs.google.com/spreadsheet/embeddedform?formkey=dFFVWVhMNVV2YnprSkFfSUpFWlZQYWc6MQ' >Loading...</iframe>";
 }
-else 
+else
 {if (chosen== "Expertise"){
 document.getElementById('wrp').innerHTML = "<iframe  class= 'iframes' src='https://docs.google.com/spreadsheet/embeddedform?formkey=dHRpTmlqVXVwUWFZbWl1YkRjUWVSQ2c6MQ'>Loading...</iframe> ";
 }
